@@ -1,0 +1,122 @@
+.hometown-announcement-admin {
+    max-width: 1400px;
+}
+
+.hometown-admin-heading {
+    margin: 18px 0 20px;
+}
+
+.hometown-admin-heading h1,
+.hometown-card h2 {
+    margin-top: 0;
+}
+
+.hometown-admin-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(320px, 0.8fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.hometown-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.hometown-card--locations {
+    margin-top: 10px;
+}
+
+.hometown-card-heading,
+.hometown-location-row__header,
+.hometown-toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.hometown-two-col,
+.hometown-grid-4 {
+    display: grid;
+    gap: 16px;
+}
+
+.hometown-two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hometown-grid-4 {
+    grid-template-columns: 140px repeat(3, minmax(0, 1fr));
+}
+
+.hometown-field {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.hometown-field > span,
+.hometown-toggle-row > span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.hometown-field input,
+.hometown-field textarea,
+.hometown-field select {
+    width: 100%;
+}
+
+.hometown-toggle-row {
+    border-bottom: 1px solid #f0f0f1;
+    padding: 10px 0 16px;
+    margin-bottom: 16px;
+}
+
+.hometown-toggle-row--compact {
+    align-self: end;
+}
+
+.hometown-toggle-row--compact > span {
+    margin-bottom: 0;
+}
+
+.hometown-location-row {
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    margin: 16px 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+.hometown-location-row__header {
+    padding: 14px 16px;
+    background: #f6f7f7;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.hometown-location-row__body {
+    padding: 18px;
+}
+
+.hometown-status {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 7px;
+    border-radius: 999px;
+    font-size: 11px;
+    background: #edfaef;
+    color: #116329;
+}
+
+@media (max-width: 1000px) {
+    .hometown-admin-grid,
+    .hometown-two-col,
+    .hometown-grid-4 {
+        grid-template-columns: 1fr;
+    }
+}

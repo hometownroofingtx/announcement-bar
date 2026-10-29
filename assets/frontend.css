@@ -1,0 +1,48 @@
+.hometown-announcement {
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.hometown-announcement--info { background: #0b5cab; color: #fff; }
+.hometown-announcement--warning { background: #b45309; color: #fff; }
+.hometown-announcement--success { background: #166534; color: #fff; }
+.hometown-announcement--danger { background: #b91c1c; color: #fff; }
+
+.hometown-announcement__inner {
+    width: min(1200px, calc(100% - 32px));
+    margin: 0 auto;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 8px 0;
+}
+
+.hometown-announcement__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+
+.hometown-announcement__cta {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.hometown-announcement__close {
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
